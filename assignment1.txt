@@ -6,12 +6,12 @@ Initialization-this is when a value is assigned to a variable.
 Example:
  Var x
 undefined
-Var x =2
+Var x =2;
 undefined
 X
 2
 Definition-it defines the value held by the var . 
 Example:
-Var x = 1
+Var x = 1;
 Var name =”Tina”
 
