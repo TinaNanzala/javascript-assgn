@@ -1,0 +1,17 @@
+ DECLARATION, DEFINITION AND INITIALIZATION IN JS
+
+Declaration –this is when a variable is registered using a given name within the corresponding scope i.e inside a function. One does not define what value it holds but declaring its existence 
+example: var x 
+Initialization-this is when a value is assigned to a variable.
+Example:
+ Var x
+undefined
+Var x =2;
+undefined
+X
+2
+Definition-it defines the value held by the var . 
+Example:
+Var x = 1;
+Var name =”Tina”
+
