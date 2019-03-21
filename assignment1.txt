@@ -1,17 +1,10 @@
- DECLARATION, DEFINITION AND INITIALIZATION IN JS
+                                     DIFFERENCE BETWEEN NULL AND UNDEFINED 
+Null is a type object while Undefined is a type undefined
+Null is an assigned value .It means nothing 	Undefined is a variable that has been declared but not yet defined
+Null is valid in JSON(JavaScript object notation)	Undefined is invalid in JSON(JavaScript object notation)
+In null one can use, variable Name=== null to check if a variable is defined	One can check if a variable is defined in undefined using ,type of variable Name===”undefined”
+When one performs arithmetic conversion on null, value determined is zero, Undefined doesn’t carry out arithmetic conversion 
+Null is JavaScript’s primitive values	
+Undefined is a global variable that JavaScript creates at routine 
 
-Declaration –this is when a variable is registered using a given name within the corresponding scope i.e inside a function. One does not define what value it holds but declaring its existence 
-example: var x 
-Initialization-this is when a value is assigned to a variable.
-Example:
- Var x
-undefined
-Var x =2;
-undefined
-X
-2
-Definition-it defines the value held by the var . 
-Example:
-Var x = 1;
-Var name =”Tina”
 
