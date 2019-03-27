@@ -1,0 +1,30 @@
+fruit_list = ["apples","guavas","dates","banana","oranges","pineapple"];
+
+(6) ["apples", "guavas", "dates", "banana", "oranges", "pineapple"]
+
+function printFruits(fruit_list){}
+
+undefined
+
+function printFruits(fruit_list)
+{
+
+console.log(fruit_list);
+
+}
+
+
+undefined
+
+
+var fruit_index = prompt ("from fruit_list pick 3");
+
+console.log(fruit_list[fruit_index]);
+
+function pickFruit(fruit_list,fruit_index)
+
+{alert(fruit_list[fruit_index]);}
+
+VM708:2 banana
+
+undefined
