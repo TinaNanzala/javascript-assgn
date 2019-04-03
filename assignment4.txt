@@ -1,0 +1,34 @@
+fruitlist ={"apples":20,"guavas":30,"dates":50, "banana":40, "oranges":10}
+{apples: 20, guavas: 30, dates: 50, banana: 40, oranges: 10}
+var quantity=2;
+
+undefined
+
+var price = fruitlist["guavas"]*quantity
+
+
+
+undefined
+
+function calculateFruitCost(fruitname,quntity){
+
+fruits ={"apples":20,"guavas":30,"dates":50,"banana":40,"oranges":10}
+
+console.log(quantity+" "+"oranges"+" " +"for ksh"+ " "+price);}
+
+
+undefined
+
+calculateFruitCost("guavas",2);
+
+VM459:3
+ 2 oranges for ksh 60
+
+undefined
+
+calculateFruitCost("banana",4);
+
+VM459:3 
+2 oranges for ksh 60
+
+undefined
