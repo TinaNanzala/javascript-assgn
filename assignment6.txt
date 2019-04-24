@@ -18,5 +18,5 @@ function kiosk() {
 }
 var Kiosk =kiosk();
 Kiosk.set("bananas");
-Kiosk.set(","+"mangoes,oranges,melon,pawpaw,lemon",)
+Kiosk.set("mangoes,oranges,melon,pawpaw,lemon",)
 console.log(Kiosk.get())
