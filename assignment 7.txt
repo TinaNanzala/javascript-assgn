@@ -7,13 +7,13 @@ class KioskCalc {
 }
 getTotalCost() { 
  var fruitsprice = this.fruitsPricelist[this.fruit]*this.quantity;
- return this.quantity+" "+this.fruit+" "+"for ksh"+" " + fruitprice;
+ return this.quantity+" "+this.fruit+" "+"for kshs"+" " + fruitprice;
   }
 }
 
-var KioskCalc1= new KioskCalc("orange",2);
-var KioskCalc2=new KioskCalc("mango",3);
-var KioskCalc3=new KioskCalc("avocado",4);
+var KioskCalc1= new KioskCalc("oranges",2);
+var KioskCalc2=new KioskCalc("mangos",3);
+var KioskCalc3=new KioskCalc("avocados",4);
 
 console.log(KioskCalc1.getTotalCost());
 console.log(KioskCalc2.getTotalCost());
