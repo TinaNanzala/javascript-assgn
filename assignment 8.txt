@@ -1,0 +1,21 @@
+function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+ask(
+  "Do you agree?",
+  ()=> alert("You agreed,"),
+  ()=> alert("You cancelled the execution.")
+  );
+
+ let student={
+  name:"Nanzala Tina",
+  age:22,
+  isStudent:"isStudent"
+
+}
+for(let key in student){
+  if (student.hasOwnProperty(key)){
+    console.log(student[key]);
+  }
+}
