@@ -1,0 +1,182 @@
+class MumMboga {
+  
+  constructor() {
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+
+  // ...complete the rest 
+
+
+ addProduct(productId,name,price,quantity){
+   var product={id:productId,
+                name:name,
+                price:price,
+                quantity:quantity
+               }
+ 
+      this.products.push(product)
+
+ }
+  getProduct(productId){
+    for(var i= 0;i<this.products.length;i++) {
+    let product =this.products[i]
+    if (product.id==productId){
+      return product
+    }
+  }
+}
+  
+  removeProduct(productId){
+    let product=this.getProduct(productId)
+    let index=this.products.indexOf(product)
+    this.products.splice(index, 1)
+
+  }
+  
+  updateProduct(productId,name,price,quantity){
+     var product={id:productId,
+                name:name,
+                price:price,
+                quantity:quantity
+               }
+ 
+      this.products.push(product)
+    
+  }
+  addToCart(cartId, product, orderQuantity, customerId){
+     var cart={id:cartId,
+                product:product,
+                orderQuantity:orderQuantity,
+                customerId:customerId,
+               }
+ 
+      this.carts.push(cart)
+
+  }
+  getProductCatalog(){
+return this.products
+  }
+  removeFromCart(cartId){
+    let cart=this.getProductCatalog(cartId)
+    let index=this.carts.indexOf(cart)
+    this.carts.splice(index, 1)
+
+ }
+  createOrder(cartId,orderId){
+    var order = {orderId:orderId,cartId:cartId}
+    this.orders.push(order)
+  }
+  getOrder(orderId){
+     for(var i= 0;i<this.orders.length;i++) {
+    let order =this.orders[i]
+    if (order.id==orderId){
+      return order
+    }
+  }
+  }
+  cancelOrder(orderId){
+    let order=this.getOrder(orderId)
+    let index=this.orders.indexOf(order)
+    this.orders.splice(index, 1)
+
+  }
+  calculateOrderCost(OrderId){
+let orderId =this.getOrder(orderId)
+let cartId =this.createOrder(cartId)
+let cart =this.getCart(cartId)
+let quantity =cart.orderQuantity;
+let product = cart.product;
+    for (var i=0; i<this.products.length;i++){
+      if(thisProduct.name==product){
+        var price = thisProduct.price;
+        var totalCost = quantity*price
+        return totalcost
+      }
+      this.customers.push.(customer)
+    }
+
+  
+  
+  addCustomer(customerId, name, email, address ){
+    var customer={id:customerId
+                name:name;
+                 email:email;
+                 address:address;}
+  }
+    removeCustomer(customerId){
+      let Product =this.getCustomer(customerId)
+      let index =this.customers.indexOf(customer)
+         this.products.splice(index, 1)
+ 
+    }
+    updateCustomer(customerId, name, email, address ){
+     var customer={id:customerId,
+                name:name,
+                email:email,
+                address:address,
+               }
+ 
+      this.customers.push(customer)
+    
+  }
+    }
+  getCustomer(customerId){
+return this.customers
+  }
+  }
+  }
+var mumMboga = new MumMboga()
+  mumMboga.addProduct(1,"tomatoes",20,5)
+  mumMboga.addProduct(2,"Kales",10,10)
+  console.log(mumMboga.products)
+  mumMboga.removeProduct(1);
+console.log(mumMboga.products)
+  mumMboga.getProduct(1);
+console.log(mumMboga.products)
+  mumMboga.updateProduct(3,"Carrots",3,10)
+  console.log(mumMboga.products)
+
+var mumMboga = new MumMboga()
+  mumMboga.addToCart(1,"Onions",20,4)
+  mumMboga.addToCart(2,"Corrianders",10,5)
+  console.log(mumMboga.carts)
+  mumMboga.removeFromCart(2);
+console.log(mumMboga.carts)
+  mumMboga.getProductCatalog()
+  console.log(mumMboga.products)
+
+  var mumMboga = new MumMboga()
+  mumMboga.createOrder(22,13)
+  console.log(mumMboga.orders)
+  mumMboga.getOrder(12)
+  console.log(mumMboga.orders)
+  mumMboga.cancelOrder(13)
+  console.log(mumMboga.orders)
+  
+ mumMboga.calculateOrderCost(30)
+ console.log(mumMboga.orders)
+  
+ var Tish =new MumMboga()
+ tish.addCustomer(4,"Cia","nanzalacia@gmail.com","Nairobi")
+console.log(mumMboga.customers)
+tish.removeCustomer(4,"nanzalacia@gmail.com","Nairobi")
+console.log(mumMboga.customers)
+mumMboga.updateCustomer(3,"nanzalatina33@gmail.com","Nairobi")
+  console.log(mumMboga.customers)
+  mumMboga.getCustomer()
+  console.log(mumMboga.customers)
+
+  
+
+
+
+
+
+
+
+
+
+
