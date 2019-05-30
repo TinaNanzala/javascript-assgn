@@ -1,0 +1,167 @@
+
+class Mkulima {
+  
+  constructor() {
+    this.farms = [];
+    this.vendors = [];
+    this.products = [];
+    this.orders = [];
+  }
+
+  // ...complete the rest 
+addFarm(farmId,name,farmer,phone,address){
+    let farm = {id:farmId,name:name,farmer:farmer,phone:phone,address:address};
+    this.farms.push(farm);
+}
+ 
+  removeFarm(farmId){
+    let farm=this.getFarm(farmId)
+    let index=this.farms.indexOf(farm)
+    this.farms.splice(index, 1)
+
+  }
+
+updateFarm(farmId,name,farmer,phone,address){
+  let farm = this.getFarm(farmId);
+  let myIndex = this.farms.indexOf(farm);
+  var newFarm = this.farms[myIndex]= {farmId:farmId,name:name,farmer:farmer,phone:phone,address:address}
+  this.farms.push(newfarm)
+}
+getFarm(farmId){
+   for (var i = 0; i < this.farms.length; i++){
+     let farm = this.farms[i]
+     if(farm.id== farmId){
+       return farm
+     } 
+     }
+}
+   addVendor(vendorId, name, phone){
+       let Vendor = {id:vendorId,name:name,phone:phone};
+       this.vendors.push(vendor);
+     }
+     removeVendor(vendorId){
+       let vendor = this.getVendor(vendorId);
+       let index = this.vendors.indexOf(vendor);
+       this.vendors.splice(index,2)
+     
+   }
+  updateVendor(vendorId, name, phone){
+  let farm = this.getFarm(farmId);
+  let myIndex = this.farms.indexOf(farm);
+  var newFarm = this.farms[myIndex]= {farmId:farmId,name:name,farmer:farmer,phone:phone,address:address}
+  this.farms.push(newfarm)
+  }
+  getVendor(vendorId){
+    for(var i= 0;i<this.vendors.length;i++){
+      let vendor =this.vendors[i]
+    if (vendor.id==vendorId){
+     return vendor
+    }
+    }
+  }
+     addProduct(productId, name, price){
+   var product={id:productId,
+                name:name,
+                price:price,  
+               }
+ 
+      this.products.push(product)
+
+ }
+  removeProduct(productId){
+    let product=this.getProduct(productId)
+    let index=this.products.indexOf(product)
+    this.products.splice(index, 1)
+
+  }
+  updateProduct(productId,name,price,quantity){
+     var product={id:productId,
+                name:name,
+                price:price,
+                quantity:quantity
+               }
+ 
+      this.products.push(product)
+    
+  }
+   getProduct(productId){
+     for(var i= 0;i<this.products.length;i++) {
+       let product =this.products[i]
+    if (product.id==productId){
+      return product
+     }
+     }
+   }
+    
+  
+   printProducts(){
+     return this.products
+   }
+  
+  createOrder( productId, quantity, farmId, storeId){
+    var order = {Id:productId,quantity:quantity,id:farmId,id:storeId}
+    this.orders.push(order)
+  }
+  calculateOrderCost( productId, quantity){
+    let orderId =this.getOrder(orderId)
+// let farmId =this.createOrder(cartId)
+// let farm =this.getCart(cartId)
+// let quantity =farm.quantity;
+// let productId = farm.product;
+//     for (var i=0; i<this.products.length;i++){
+//       if thisProduct.name==product){
+//         var price = thisProduct.price;
+//         var totalCost = quantity*price
+//         return totalcost
+//       }
+//       this.farm.push(order)
+  
+//  }
+ }
+}
+  
+var mkulima = new Mkulima()
+mkulima.addFarm(1,"T","Tausi",+2547998,"Nairobi")
+mkulima.addFarm(2,"M","Taki",+2547998,"Nairobi")
+console.log(mkulima.farms)
+mkulima.removeFarm(1);
+console.log(mkulima.farms)
+
+mkulima.updateFarm(1,"M","Tami",+25467299,"Nairobi")
+console.log(mkulima.farms)
+mkulima.updateFarm(1,"Sati",+2547678628,"Kisumu")
+console.log (mkulima.farms)
+ mkulima.getFarm(1)
+ console.log(mkulima.farms)
+ 
+ var mkulima =new Mkulima()
+ mkulima.addVendor(12,"hannah",0789936929)
+ mkulima.addVendor(13,"Joy",0745722099)
+ console.log(mkulima.vendors)
+ mkulima.removeVendor(12);
+ console.log(mkulima.Vendors)
+ mkulima.updateVendor(14,"Samuel",0789690009)
+ console.log(mkulima.vendors)
+ mkulima.getVendor(1);
+ console.log(mkulima.vendors)
+ 
+ var mkulima new Mkulima()
+  mkulima.addProduct(1,"tomatoes",20,5)
+  mkulima.addProduct(2,"Kales",10,10)
+  console.log(Mkulima.products)
+  mkulima.removeProduct(1);
+console.log(Mkulima.products)
+  mkulima.getProduct(1);
+console.log(mkulima.products)
+  mkulima.updateProduct(3,"Carrots",3,10)
+  console.log(mkulima.products)
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+  
