@@ -1,0 +1,27 @@
+var body =document.body
+body.style.backgroundColor="silver"
+document.getElementById("title").style.color="green"
+var body=document.body
+
+var h3 =document.getElementsByTagName("h3")
+body.style.textTransform="uppercase"
+
+var fruits=document.createElement("fruilist")
+list.innerHTML="Sweet melon"
+var ul=document.getElementById("fruitList")
+ul.appendChild(fruits)
+
+var veges =document.createElement("list")
+list2.innerHTML="carrots"
+var ul=document.getElementById("vegesList")
+ul.appendChild(list2)
+
+var h3 =document.createElement("h3")
+var text =document.createTextNode("Sweet Melon")
+h3.appendChild(text)
+
+
+
+for (var i=0; i < p2.length;i++){
+  p2[i].style.color ="pink"
+}
