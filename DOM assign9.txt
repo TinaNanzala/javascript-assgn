@@ -16,6 +16,6 @@ node.appendChild(text)
 document.getElementById("fruList").appendChild(node)
 
 var node=document.createElement("list")
-var msg=document.createTextNode("Carrots")
+var txt=document.createTextNode("Carrots")
 node.appendChild(txt)
 document.getElementById("vegList").appendChild(node)
