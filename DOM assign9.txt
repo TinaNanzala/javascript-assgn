@@ -10,12 +10,12 @@ for(var i=0;i<h.length;i++){
   h[i].style.textTransform="upperCase"
 }
 
-var node=document.createElement("li")
-var text=document.createTextNode("pineapple")
+var node=document.createElement("list")
+var text=document.createTextNode("Sweet melon")
 node.appendChild(text)
 document.getElementById("fruList").appendChild(node)
 
-var node=document.createElement("li")
-var msg=document.createTextNode("cabbage")
-node.appendChild(msg)
+var node=document.createElement("list")
+var msg=document.createTextNode("Carrots")
+node.appendChild(txt)
 document.getElementById("vegList").appendChild(node)
